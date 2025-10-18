@@ -15,8 +15,8 @@ window.addEventListener('load', () => {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yeah, let’s go 🎵',
-        cancelButtonText: 'Nah, I’m chill 😎',
+        confirmButtonText: 'Yeah, let’s go ♫',
+        cancelButtonText: 'Nah, I’m chill ⊘',
         background: '#fffefc',
         customClass: {
             popup: 'swal2-border-radius-xl'
