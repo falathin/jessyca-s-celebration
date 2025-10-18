@@ -1,23 +1,36 @@
-// trigger to play music in the background with sweetalert
+// Trigger to play background music with SweetAlert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
-        icon: 'warning',
+        title: 'Play background music? 🎵',
+        html: `
+            <p style="font-size:14px; color:#555; margin-top:8px; line-height:1.6;">
+                💡 For the best experience, try it on a <b>PC or laptop</b> 💻<br>
+                （パソコンで見ると、もっときれいだよ！）<br><br>
+                Don’t worry, it still looks great on mobile 📱✨<br>
+                （スマホでもちゃんと見えるから安心してね！）<br><br>
+                <span style="font-size:12px; color:#aaa;">recreated by : <b>@i.a.falathin</b></span>
+            </p>
+        `,
+        icon: 'question',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
+        confirmButtonText: 'Yeah, Aight bro ♫',
+        cancelButtonText: 'Nah, I’m chill ♫⃠',
+        background: '#fffefc',
+        customClass: {
+            popup: 'swal2-border-radius-xl'
+        }
     }).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector('.song').play();
+            const song = document.querySelector('.song');
+            if (song) song.play();
             animationTimeline();
         } else {
             animationTimeline();
         }
     });
 });
-
 
 // animation timeline
 const animationTimeline = () => {
