@@ -1,22 +1,22 @@
 // Trigger to play background music with SweetAlert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Play background music? 🎵',
+        title: 'Wanna play some music? 🎵',
         html: `
-            <p style="font-size:14px; color:#555; margin-top:8px; line-height:1.6;">
-                💡 For the best experience, try it on a <b>PC or laptop</b> 💻<br>
-                （パソコンで見ると、もっときれいだよ！）<br><br>
-                Don’t worry, it still looks great on mobile 📱✨<br>
-                （スマホでもちゃんと見えるから安心してね！）<br><br>
-                <span style="font-size:12px; color:#aaa;">recreated by : <b>@i.a.falathin</b></span>
+            <p style="font-size:14px; color:#555; line-height:1.4; margin-top:6px;">
+                💻 Best on PC or laptop<br>
+                （パソコンだともっとエモい！）<br>
+                📱 Still looks good on mobile<br>
+                （スマホでもOKだよ）<br><br>
+                <span style="font-size:12px; color:#aaa;">by <b>@i.a.falathin</b></span>
             </p>
         `,
         icon: 'question',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yeah, Aight bro ♫',
-        cancelButtonText: 'Nah, I’m chill ♫⃠',
+        confirmButtonText: 'Yeah, let’s go 🎵',
+        cancelButtonText: 'Nah, I’m chill 😎',
         background: '#fffefc',
         customClass: {
             popup: 'swal2-border-radius-xl'
